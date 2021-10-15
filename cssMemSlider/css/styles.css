@@ -1,0 +1,27 @@
+
+
+
+main{
+    background-color: antiquewhite;
+}
+
+input{
+   
+}
+.slider__item1{
+    background: url(/img/DSCN9528a.jpg);
+}
+/* input:checked{
+    color: rgb(236, 27, 27);
+} */
+
+radio__input:hover,
+radio__input:focus {
+    color: rgb(236, 27, 27);
+}
+
+radio__input:active {
+    background-color: white;
+    color: black;
+    outline: 1px solid black;
+}
