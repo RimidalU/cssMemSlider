@@ -20,9 +20,15 @@ body {
     background-color: rgb(177, 233, 145);
 }
 
+h1{
+    font-size: medium;
+}
+
 .slider__body{
+    margin: 0 auto;
     background-color: aqua;
     padding: 2vw;
+    margin: 0 1vw;
     border-radius: 0.5vw;
 }
 
@@ -39,26 +45,32 @@ body {
 }
 
 .navigation-btn {
-    width: 1rem;
-    height: 1rem;
-    border: 2px solid #de6a23;
+    padding: 0.5vw;
+    cursor: pointer;
+}
+
+.wrap__nav{
+    width: 0.8vw;
+    height: 0.8vw;
+    border: 0.2vw solid #de6a23;
     background: #de6a23;
-    border-radius: 0.5rem;
+    border-radius: 0.5vw;
     cursor: pointer;
     transition: 1s;
     caret-color: transparent;
 }
 
+
 .navigation-btn:not(:last-child) {
     margin-right: 0.5vw;
 }
 
-.navigation-btn:checked {
+.wrap__nav:focus {
     background:rgb(177, 233, 145);
-    border: 0.5rem solid #d1b19c;
+    border: 0.2vw solid #d1b19c;
 }
 
-.navigation-btn:hover{
+.wrap__nav:hover{
     background: #23c2de;
 }
 
@@ -71,15 +83,15 @@ body {
 
 
 .slider {
-    width: 42rem;
-    height: 31.25rem;
+    max-width: 34vw;
+    max-height: 24vw;
     border-radius: 0.5vw;
     overflow: hidden;
 }
 
 .imgs_slides {
     width: 500%;
-    height: 31.25rem;
+    max-height: 24vw;
     display: flex;
     object-fit: scale-down;
 }
@@ -95,8 +107,8 @@ body {
 }
 
 .slide img {
-    max-width: 50rem;
-    height: 31.25rem;
+    max-width: 34vw;
+    height: 24vw;
 }
 
 .slider__title_form input {
@@ -104,11 +116,11 @@ body {
 }
 
 .slider__title{
-    border: 2px solid #de6a23;
-    width: 9rem;
-    height: 1.5rem;
-    border-radius: 0.5vw;
-    padding-left: 0.3rem;
+    border: 0.2vw solid #de6a23;
+    width: 9vw;
+    height: 1.1vw;
+    border-radius: 0.1vw;
+    padding-left: 0.2vw;
     /* overflow: hidden; */
     
 }
@@ -121,7 +133,9 @@ body {
 
 .slider__title_form> p{
     position: relative;
+    margin-top: -0.2vw;
 }
+
 
 #radio1:checked~.first {
     margin-left: 0;
@@ -129,6 +143,10 @@ body {
 
 #radio2:checked~.first {
     margin-left: -20%;
+}
+
+#radio3:checked~ .title_1{
+    color: blue; 
 }
 
 #radio3:checked~.first {
@@ -139,19 +157,16 @@ body {
     margin-left: -60%;
 }
 
-.imgs_slides >#radio5:checked~.first {
+#radio5:checked~.first {
     margin-left: -80%;
 }
 
-.title_1{
-    margin-top:0px;
-}
 
-#radio3:checked~.h2{
-    margin-top: -54px;
-    color: blue; 
-}
-
+/* .slide::before{
+    content: "устроить пикник";
+    float: left;
+    top: 20px;
+} */
 
 
 
@@ -171,3 +186,10 @@ body {
  #title5:checked~.title_1 {
     margin-top: -72px;
 } */
+
+
+@media screen and (max-width: 720px) {
+   
+
+
+}
