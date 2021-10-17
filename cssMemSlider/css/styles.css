@@ -120,7 +120,7 @@ h1{
     height: 1.1vw;
     border-radius: 0.1vw;
     padding-left: 0.2vw;
-    /* overflow: hidden; */
+    overflow: hidden;
     
 }
 
@@ -131,7 +131,6 @@ h1{
 }
 
 .slider__title_form> p{
-    /* position: relative; */
     margin-top: -0.2vw;
 }
 
@@ -206,6 +205,11 @@ h1{
 .slider {
     max-width: 64vw;
     max-height: 48vw;
-
+}
+.slider__title_form> p {
+    margin-top: -1vw;
+}
+p{
+    font-size: 10px;
 }
 }
