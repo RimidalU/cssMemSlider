@@ -61,7 +61,7 @@ h1{
 }
 
 
-.navigation-btn:not(:last-child) {
+.wrap__nav:not(:last-child) {
     margin-right: 0.5vw;
 }
 
@@ -83,7 +83,7 @@ h1{
 
 
 .slider {
-    max-width: 34vw;
+    max-width: 32vw;
     max-height: 24vw;
     border-radius: 0.5vw;
     overflow: hidden;
@@ -121,7 +121,7 @@ h1{
     height: 1.1vw;
     border-radius: 0.1vw;
     padding-left: 0.2vw;
-    /* overflow: hidden; */
+    overflow: hidden;
     
 }
 
@@ -132,7 +132,7 @@ h1{
 }
 
 .slider__title_form> p{
-    position: relative;
+    /* position: relative; */
     margin-top: -0.2vw;
 }
 
@@ -189,7 +189,27 @@ h1{
 
 
 @media screen and (max-width: 720px) {
-   
+.slider__response{
+    position: relative;
+    display: flex ;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 2vw;
+}
+h1{
+    font-size: 0.5rem;
+}
 
+.slide img {
+    max-width: 68vw;
+    height: 48vw;
+}
+.imgs_slides {
+    max-height: 48vw;
+}
+.slider {
+    max-width: 64vw;
+    max-height: 48vw;
 
+}
 }
