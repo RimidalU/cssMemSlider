@@ -34,10 +34,8 @@ body {
 .navigation {
     position: relative;
     max-width: 20vw;
-    /* margin: 10vw 10vw 10vw 10vw ; */
     display: flex;
     justify-content: center;
-    /* z-index: 10 ; */
 }
 
 .navigation-btn {
@@ -45,8 +43,7 @@ body {
     height: 1rem;
     border: 2px solid #de6a23;
     background: #de6a23;
-    padding: 5px;
-    border-radius: 10px;
+    border-radius: 0.5rem;
     cursor: pointer;
     transition: 1s;
     caret-color: transparent;
@@ -56,9 +53,9 @@ body {
     margin-right: 0.5vw;
 }
 
-.navigation-btn:{
-   background:rgb(177, 233, 145);
-   border: 8px solid #d1b19c;
+.navigation-btn:checked {
+    background:rgb(177, 233, 145);
+    border: 0.5rem solid #d1b19c;
 }
 
 .navigation-btn:hover{
@@ -77,22 +74,17 @@ body {
     width: 42rem;
     height: 31.25rem;
     border-radius: 0.5vw;
-    
     overflow: hidden;
 }
 
 .imgs_slides {
-    /* position: relative; */
     width: 500%;
     height: 31.25rem;
     display: flex;
     object-fit: scale-down;
-    /* margin-bottom: 20vw; */
 }
 
-/* We have to set display: none;
-  If not, all of our images would 
-  be visible at the same time */
+
 .imgs_slides input {
     display: none;
 }
@@ -111,37 +103,39 @@ body {
     display: none;
 }
 
-.slider__title_form{
+.slider__title{
     border: 2px solid #de6a23;
     width: 9rem;
     height: 1.5rem;
     border-radius: 0.5vw;
     padding-left: 0.3rem;
-    overflow: hidden;
+    /* overflow: hidden; */
+    
+}
+
+.slider__title_form{
+    width: 500%;
     display: flex;
     flex-direction: column;
 }
-/* css for slide navigation */
 
-/* The checked attribute is used with
-reference to <input type="radio">, 
-when radio button is clicked the 
-class will shift w.r.t  left margin 
-as mentioned which results in image 
-slider */
-.imgs_slides > #radio1:checked~.first {
+.slider__title_form> p{
+    position: relative;
+}
+
+#radio1:checked~.first {
     margin-left: 0;
 }
 
-.imgs_slides >#radio2:checked~.first {
+#radio2:checked~.first {
     margin-left: -20%;
 }
 
-.imgs_slides >#radio3:checked~.first {
+#radio3:checked~.first {
     margin-left: -40%;
 }
 
-.imgs_slides >#radio4:checked~.first {
+#radio4:checked~.first {
     margin-left: -60%;
 }
 
@@ -149,19 +143,31 @@ slider */
     margin-left: -80%;
 }
 
+.title_1{
+    margin-top:0px;
+}
 
-.slider__title_form > #radio1:checked~.title1 {
+#radio3:checked~.h2{
+    margin-top: -54px;
+    color: blue; 
+}
+
+
+
+
+/* 
+#title1:checked~.title_1 {
     margin-top: 0;
 }
-.slider__title_form > #radio2:checked~.title1 {
+#title2:checked~.title_1 {
     margin-top: -18px;
 }
-.slider__title_form > #radio3:checked~.first {
-    margin-top: -46px;
+#title3:checked~.title_1 {
+    margin-top: -36px;
 }
-.slider__title_form > #radio4:checked~.first {
-    margin-top: -60%;
+ #title4:checked~.title_1 {
+    margin-top: -54px;
 }
-.slider__title_form > #radio5:checked~.first {
-    margin-top: -80%;
-}
+ #title5:checked~.title_1 {
+    margin-top: -72px;
+} */
