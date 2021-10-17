@@ -60,7 +60,6 @@ h1{
     caret-color: transparent;
 }
 
-
 .wrap__nav:not(:last-child) {
     margin-right: 0.5vw;
 }
@@ -121,7 +120,7 @@ h1{
     height: 1.1vw;
     border-radius: 0.1vw;
     padding-left: 0.2vw;
-    overflow: hidden;
+    /* overflow: hidden; */
     
 }
 
@@ -145,7 +144,7 @@ h1{
     margin-left: -20%;
 }
 
-#radio3:checked~ .title_1{
+#radio3:checked~.slider__body .title_12{
     color: blue; 
 }
 
@@ -162,12 +161,9 @@ h1{
 }
 
 
-/* .slide::before{
-    content: "устроить пикник";
-    float: left;
-    top: 20px;
-} */
-
+#radio4:checked ~ .slider__response .title_12{
+    transform: translateY(200%);
+  }
 
 
 /* 
